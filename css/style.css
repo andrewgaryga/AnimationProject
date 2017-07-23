@@ -1,0 +1,41 @@
+.navbar {
+    border-radius: 0;
+}
+.header {
+    text-align: center;
+}
+.header-books{
+    text-align: right;
+    background-color: lightgrey;
+    padding: 7px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.books-content {
+    opacity: 0;
+
+    -webkit-transition: opacity 2s; 
+      transition: opacity 2s;
+}
+.already-visible {
+    opacity: 1;
+}
+.books-content [class^="col-"] {
+    padding: 15px 0;
+}
+/*Onload animation*/
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1.8s ease forwards;
+
+  opacity: 1;
+
+}
+/*.come-in:nth-child(odd) {
+  animation-duration: 2.6s;
+}*/
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
